@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{07FF88D3-16F4-4AD4-BEE1-50D683D886EE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PMTTS_Feb_10_2023</RootNamespace>
+    <AssemblyName>PMTTS_Feb_10_2023</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>%24this.Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2">
+      <HintPath>C:\Users\gberx\Downloads\PcWonderland.com_Guna_UI_Framework_Ultimate_2\PcWonderland.com_Guna_UI_Framework_Ultimate_2\Guna UI Framework Ultimate v2.0.0.1 Lib-Master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class_Connection\ConnectionDB.cs" />
+    <Compile Include="Class_Connection\LoginUser.cs" />
+    <Compile Include="Class_Connection\MyConnection.cs" />
+    <Compile Include="Class_Connection\val.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\accountpass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\accountpass.Designer.cs">
+      <DependentUpon>accountpass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Add_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Add_Form.Designer.cs">
+      <DependentUpon>Add_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin_Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin_Control.Designer.cs">
+      <DependentUpon>Admin_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin_tracker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin_tracker.Designer.cs">
+      <DependentUpon>Admin_tracker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmSettingsAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmSettingsAdmin.Designer.cs">
+      <DependentUpon>frmSettingsAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmSettingsUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmSettingsUser.Designer.cs">
+      <DependentUpon>frmSettingsUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Logs.Designer.cs">
+      <DependentUpon>Logs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Screenshot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Screenshot.Designer.cs">
+      <DependentUpon>Screenshot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\userLogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\userLogs.Designer.cs">
+      <DependentUpon>userLogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Uss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Uss.Designer.cs">
+      <DependentUpon>Uss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pages\user_Tracker1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\user_Tracker1.Designer.cs">
+      <DependentUpon>user_Tracker1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\accountpass.resx">
+      <DependentUpon>accountpass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Add_Form.resx">
+      <DependentUpon>Add_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Admin_Control.resx">
+      <DependentUpon>Admin_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Admin_tracker.resx">
+      <DependentUpon>Admin_tracker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmSettingsAdmin.resx">
+      <DependentUpon>frmSettingsAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmSettingsUser.resx">
+      <DependentUpon>frmSettingsUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Logs.resx">
+      <DependentUpon>Logs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Screenshot.resx">
+      <DependentUpon>Screenshot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\userLogs.resx">
+      <DependentUpon>userLogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Uss.resx">
+      <DependentUpon>Uss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Pages\user_Tracker1.resx">
+      <DependentUpon>user_Tracker1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include=".editorconfig" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload-media2-1-e1628075381997.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-account-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Giber.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-show-property-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pencil-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-remove-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UserControls\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="%24this.Icon.ico" />
+    <None Include="Resources\icons8-edit-file-50.png" />
+    <None Include="Resources\icons8-trash-24.png" />
+    <None Include="Resources\icons8-edit-property-24.png" />
+    <None Include="Resources\icons8-details-32.png" />
+    <None Include="Resources\icons8-edit-property-241.png" />
+    <None Include="Resources\icons8-trash-241.png" />
+    <Content Include="warning.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\warning.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

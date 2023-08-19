@@ -1,0 +1,26 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PMTTS_Feb_10_2023.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="PMTTS_SERVER_ROOMConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=Giber;Initial Catalog=PMTTS_SERVER_ROOM;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=Giber;Initial Catalog=PMTTS_SERVER_ROOM;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="nameS" Type="System.String" Scope="User">
+      <Value Profile="(Default)">10 Minutes</Value>
+    </Setting>
+    <Setting Name="minS" Type="System.String" Scope="User">
+      <Value Profile="(Default)">600</Value>
+    </Setting>
+    <Setting Name="nameS_U" Type="System.String" Scope="User">
+      <Value Profile="(Default)">10 Minutes</Value>
+    </Setting>
+    <Setting Name="minS_U" Type="System.String" Scope="User">
+      <Value Profile="(Default)">600</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
